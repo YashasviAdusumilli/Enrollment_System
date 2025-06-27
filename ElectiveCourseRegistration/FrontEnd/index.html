@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elective Registration Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h2>🎓 Register</h2>
+  <input type="text" id="name" placeholder="Name">
+  <input type="email" id="email" placeholder="Email">
+  <button onclick="registerStudent()">Register</button>
+  <p id="registerStatus"></p>
+
+  <div class="section">
+    <h2>🔐 Login</h2>
+    <input type="email" id="loginEmail" placeholder="Email">
+    <input type="password" id="loginPassword" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="loginStatus"></p>
+  </div>
+
+  <div class="section">
+    <h2>📚 Enroll in Course</h2>
+    <button onclick="loadCourses()">Load Courses</button>
+    <select id="courseDropdown"></select>
+    <button onclick="enrollCourse()">Enroll</button>
+    <p id="enrollStatus"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
